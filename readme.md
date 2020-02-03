@@ -48,18 +48,18 @@ Returns a new `RAFPS` instance which can toggle between play/pause states using 
 Type: `Function`<br>
 Required: `true`
 
-The callback function you want invoked at every "frame" tick.
+The callback function to invoke at every "frame" tick.
 
-It will receive one argument, `frame` (number), which is the current frame count since playback began.<br>The `frame` count starts at `0` and will increment indefinitely until paused. Once paused, `frame` will start from `0` once again.
+It will receive one argument, `frame` (number), which is the current frame count since playback began.<br>The `frame` count starts at `0` and will increment indefinitely until paused. Once paused, `frame` will start from `0` the next time playback begins.
 
 #### fps
 Type: `Number`<br>
 Default: `60`
 
-The number of _frames per second_<sup>*</sup> to shoot for.<br>
+The number of _frames per second_<sup>*</sup> to target.<br>
 Put differently, this is the maximum number of times `draw` will be called per second.
 
-> **Important:** This is a time-based calculation, so it's a **best guess** solution!<br>Also, your true framerate will be at the mercy of your `draw` callback. <br>You should aim for lightweight operations that complete within `1ms`.
+> **Important:** This is a time-based calculation, so it's a **best guess** solution!<br>Also, your true frame rate will be at the mercy of your `draw` callback. <br>You should aim for lightweight operations that complete within `1ms`.
 
 
 ### rafps.play()
