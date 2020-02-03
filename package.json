@@ -2,7 +2,7 @@
   "name": "rafps",
   "version": "0.0.0",
   "repository": "lukeed/rafps",
-  "description": "A tiny (178B) helper for playing, pausing, and setting requestAnimationFrame framerates",
+  "description": "A tiny (178B) helper for playing, pausing, and setting requestAnimationFrame frame rates",
   "module": "dist/index.mjs",
   "unpkg": "dist/index.min.js",
   "main": "dist/index.js",
@@ -27,7 +27,7 @@
   },
   "keywords": [
     "fps",
-    "framerate",
+    "frame rate",
     "cancelAnimationFrame",
     "requestAnimationFrame",
     "raf"
