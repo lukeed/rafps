@@ -59,7 +59,7 @@ Default: `60`
 The number of _frames per second_<sup>*</sup> to shoot for.<br>
 Put differently, this is the maximum number of times `draw` will be called per second.
 
-> **Important:** This is a time-based calculation, so it's a **best guess** solution!<br>Also, your true framerate will be at the mercy of your `draw` callback. You should shoot for lightweight modifications that can complete within `1ms`.
+> **Important:** This is a time-based calculation, so it's a **best guess** solution!<br>Also, your true framerate will be at the mercy of your `draw` callback. <br>You should aim for lightweight operations that complete within `1ms`.
 
 
 ### rafps.play()
@@ -71,7 +71,7 @@ Your `draw` function will begin invocations, receiving a new `frame` (number) pa
 ### rafps.pause()
 Returns: `void`
 
-Stop playback.
+Pause playback.
 
 
 ## License
